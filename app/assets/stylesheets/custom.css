@@ -107,3 +107,24 @@ a.signup_button {
   border: 1px ;
   padding: 10px;
 }
+
+DIV.base-layer {
+  background: none #cc9966; border: solid #333333 1px; color: #000000;
+  margin: 0.5em 12px 0.5em 12px; padding: 0; text-align: center; width: auto;
+}
+
+DIV.table-row {
+  background: none #ffffcc; border: solid #000000 1px; color: #000000;
+  margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto;
+  padding: 0; text-align: center; width: 96%;
+}
+
+/* Style rules for the 3 x 2 table example */
+
+DIV.left-container2 {
+  border: none; float: left; margin: 0; padding: 0; width: 50%;
+}
+
+DIV.right-container2 {
+  border: none; float: right; margin: 0; padding: 0; width: 50%;
+}
