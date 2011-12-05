@@ -1,0 +1,14 @@
+<h1>Game players</h1>
+  <% @post.games.complete.each do |game| %>
+    <ul>
+      <li>
+        <%= game.fname %>
+        <%= game.playerrank %>
+      </li>
+    </ul>
+  <% end %>
+
+<br >
+
+<br >
+<%= link_to 'Back', posts_path %>

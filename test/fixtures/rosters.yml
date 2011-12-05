@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fname: MyString
+  teamgoals: 1
+  goals: 1
+  assists: 1
+  ranks: 1
+  flags: false
+  post: 
+
+two:
+  fname: MyString
+  teamgoals: 1
+  goals: 1
+  assists: 1
+  ranks: 1
+  flags: false
+  post: 

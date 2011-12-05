@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fname: MyString
+  playerid: 1
+  playerrank: 1
+  post: 
+
+two:
+  fname: MyString
+  playerid: 1
+  playerrank: 1
+  post: 
