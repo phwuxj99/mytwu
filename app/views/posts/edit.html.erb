@@ -2,7 +2,7 @@
   <% @post.games.showdata.each do |game| %>
     <ul>
       <li>
-        <%= game.fname %> --
+         
         <%= case game.playerrank 
 	     		when 11 ;  @display = 'Goalkeeper'  
 	     		when 10 ;  @display = 'Centre Back'  
@@ -14,9 +14,10 @@
 	     		when 4 ;   @display = 'Centre Midfield'  	
 	     		when 3 ;   @display = 'Winger'  	
 	     		when 2 ;   @display = 'Winger'  	
-	     		when 1 ;   @display = 'Centre Foward'  	
+	     		when 1 ;   @display = 'Centre Forward'  	
 	     		else      @display = 'Substitute player' 
  			end %>
+ 			----- <%= game.fname %>
       </li>
     </ul>
   <% end %>
