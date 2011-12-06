@@ -1,9 +1,22 @@
 <h1>Game players</h1>
-  <% @post.games.complete.each do |game| %>
+  <% @post.games.showdata.each do |game| %>
     <ul>
       <li>
-        <%= game.fname %>
-        <%= game.playerrank %>
+        <%= game.fname %> --
+        <%= case game.playerrank 
+	     		when 11 ;  @display = 'Goalkeeper'  
+	     		when 10 ;  @display = 'Centre Back'  
+	     		when 9 ;   @display = 'Centre Back'  
+	     		when 8 ;   @display = 'Full Back'  
+	     		when 7 ;   @display = 'Full Back'  	
+	     		when 6 ;   @display = 'Centre Midfield'  	
+	     		when 5 ;   @display = 'Centre Midfield'  	
+	     		when 4 ;   @display = 'Centre Midfield'  	
+	     		when 3 ;   @display = 'Winger'  	
+	     		when 2 ;   @display = 'Winger'  	
+	     		when 1 ;   @display = 'Centre Foward'  	
+	     		else      @display = 'Substitute player' 
+ 			end %>
       </li>
     </ul>
   <% end %>

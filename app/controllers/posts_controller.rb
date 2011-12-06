@@ -105,6 +105,9 @@ class PostsController < ApplicationController
     # update rosters flag
     @roster.update_attribute(:flags , '1')
 
+    # reset ranks
+    ActiveRecord::Base.connection.execute("call sp_setgamesrank('#{params[:post_id]}')")
+
     # redirect_to post_url(@post)
     redirect_to post_path(@post)
   end
@@ -130,6 +133,9 @@ class PostsController < ApplicationController
      #@game.update_attribute(:created_at , '2011/12/01')
     # @game.update_attribute(:selectflag , '0')
     
+    # reset ranks
+    ActiveRecord::Base.connection.execute("call sp_setgamesrank('#{params[:post_id]}')")
+
     redirect_to post_url(@post)
     # redirect_to post_path(@post)
   end

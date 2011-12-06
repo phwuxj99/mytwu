@@ -1,5 +1,5 @@
 <p><h2>
-  <b>Game Name:</b>
+  <b> Name: </b>
   <%= @post.name %></h2>
 </p>
 
@@ -7,11 +7,11 @@
 <div class="base-layer">
 	<div class="table-row">	
 		<div class="left-container2">
-			<b>Game Title:</b>
+			<b> Title: </b>
   			<%= @post.title %> 
 		</div>
 		<div class="right-container2a" >
-			| <%= link_to 'Show all players', edit_post_path(@post) %> |
+			| <%= link_to 'Show game players', edit_post_path(@post) %> |
 				<%= link_to 'Back', posts_path %> |
 		</div>
 	</div>
@@ -31,7 +31,7 @@
     </ul>
   <% end %>
 
-<h3>Pickup Players</h3>
+<h3>Add the following players to game</h3>
 <% @post.rosters.playernogame.each do |roster| %>
     <ul>
     <li>    
